@@ -32,3 +32,20 @@ img {
     width: 100%;
     margin: auto;
 }
+
+.section-content {
+  padding: 5rem 0;
+}
+
+/* About */
+
+#about {
+  background: url('../img/girlincar.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.about-text {
+  background-color: rgb(0,0,0,0.8);
+  color: var(--white);
+  padding: 1.875rem;
+}
