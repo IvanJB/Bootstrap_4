@@ -25,6 +25,10 @@ img {
   align-items: center;
 }
 
+.form-group {
+  margin-right: 1.5rem;
+}
+
 /* carousel */
 
 .carousel-inner > .carousel-item > img,
@@ -48,4 +52,27 @@ img {
   background-color: rgb(0,0,0,0.8);
   color: var(--white);
   padding: 1.875rem;
+}
+
+
+/* Footer */
+
+#footer-main {
+  background: var(--black);
+  color: var(--white);
+  font-size: 0.8rem;
+  padding: 2.5rem 0;
+}
+
+#footer-main li a, #developer{
+  color: var(--white);
+}
+
+#footer-main li a, #developer {
+  text-decoration: none;
+}
+
+#footer-main li a:hover, #developer:hover {
+  color: #428bca; /* Bootstrap primary hex-color */
+  transition-duration: 0.2s;
 }

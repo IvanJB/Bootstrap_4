@@ -16,12 +16,12 @@
     <section id="cover">
       <div class="container" id="cover-caption">
         <div>
-          <div class="container col-sm-10 col sm-offset-1">
+          <div class="container col-sm-10 offset-sm-1">
             <h1 class="display-3">Welcome to Bootstrap 4</h1>
             <p>Just like the old Bootstrap but better. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam<br>veritatis sed placeat officiis distinctio fugit repellendus, aut natus sapiente, qui delectus, illum, rerum vel.
             </p>
 
-            <form action="" class="form-inline justify-content-center">
+            <form action="" class="form-inline d-flex justify-content-center">
               <div class="form-group">
                 <label for="" class="sr-only">Name</label>
                 <input type="text" class="form-control form-control-lg" placeholder="Jane Doe">
@@ -37,7 +37,7 @@
 
             <br>
 
-            <a href="#nav-bar" class="btn btn-sm btn-outline-light" role="button">&darr;</a>
+            <a href="#nav-main" class="btn btn-sm btn-outline-light" role="button">&darr;</a>
           </div>
         </div>
       </div>
@@ -78,7 +78,7 @@
       <li data-target="#carousel-home" data-slide-to="2"></li>
     </ol>
 
-    <div class="carousel-inner" role="listbox">
+    <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="img/woman-camera.jpg" alt="Blonde Hair photograher with a red winter cap taking a photo">
 
@@ -213,7 +213,7 @@
 
       <div class="row">
         <div class="col-sm-12">
-          <div class="card-columns">
+          <div class="card-columns pb-3">
             <div class="card">
               <img class="card-img-top" src="img/woman-camera.jpg" alt="woman with camera">
               <div class="card-body">
@@ -239,7 +239,7 @@
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
-            <div class="card bg-primary text-white text-center p-3">
+            <div class="card text-primary text-center p-3">
               <blockquote class="blockquote mb-0">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
                 <footer class="blockquote-footer">
@@ -259,7 +259,7 @@
             <div class="card">
               <img class="card-img" src="img/computer.jpg" alt="desktop workstation">
             </div>
-            <div class="card p-3 text-right bg-warning">
+            <div class="card p-3 text-right text-white bg-warning">
               <blockquote class="blockquote mb-0">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                 <footer class="blockquote-footer">
@@ -279,29 +279,62 @@
           </div>
         </div><!-- col-sm-12 -->
       </div><!-- End of .row -->
+
+      <hr>
+
+      <!-- Pagination -->
+
+      <ul class="pagination pagination-sm d-flex justify-content-center pt-3">
+        <li class="page-item"><a href="#" class="page-link">&Ll;</a></li>
+        <li class="page-item active"><a href="#" class="page-link">1</a></li>
+        <li class="page-item"><a href="#" class="page-link">2</a></li>
+        <li class="page-item"><a href="#" class="page-link">3</a></li>
+        <li class="page-item"><a href="#" class="page-link">4</a></li>
+        <li class="page-item"><a href="#" class="page-link">&Gg;</a></li>
+      </ul>
+
     </div><!-- End .container -->
   </div>
-
-  <hr>
-
-  <!-- Pagination -->
-
-  <ul class="pagination d-flex justify-content-center">
-    <li class="page-item"><a href="#" class="page-link">&Ll;</a></li>
-    <li class="page-item active"><a href="#" class="page-link">1</a></li>
-    <li class="page-item"><a href="#" class="page-link">2</a></li>
-    <li class="page-item"><a href="#" class="page-link">3</a></li>
-    <li class="page-item"><a href="#" class="page-link">4</a></li>
-    <li class="page-item"><a href="#" class="page-link">&Gg;</a></li>
-  </ul>
 </section><!-- End Section #news -->
 
 
+<!-- Footer -->
+
+<footer id="footer-main">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p>uncopyright 2018.<br/>Do what you want</p>
+        <p>
+          Coded by <a href="https://ijbdesign.net" target="_blank" id="developer">ijbdesign</a>
+        </p>
+      </div>
+      <div class="col-sm-3">
+        <ul class="list-unstyled">
+          <li><a href="#cover">Home</a></li>
+          <li><a href="what-we-do">What We Do</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="news">Latest</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul class="list-unstyled">
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Linkedin</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+          <h6>A Small Header</h>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nihil doloribus nemo consectetur perspiciatis optio blanditiis, voluptatem nobis odit error unde eos vitae. Hic provident soluta quaerat aspernatur maiores, corporis magnam voluptate.</p>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 
-
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
