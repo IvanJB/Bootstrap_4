@@ -11,9 +11,12 @@
 </head>
 
 <body>
-  <h1 class="display-3 text-center">Hello, world!<span class="text-primary text-bold pl-3">This is Bootstrap 4</span></h1>
+  <h1 class="display-3 text-center pt-5">Hello, world!<span class="text-primary text-bold pl-3">This is Bootstrap 4</span></h1>
+  <h4 class="text-secondary text-center mb-5">
+    Bootstrap 4 current version<code> 4.1.2 </code>
+  </h4>
 
-  <div class="container-fluid pt-5 boder-bottom border-dark">
+  <div class="container pt-5 pb-5 border-bottom border-dark">
     <h3 class="display-4 mb-1">Bootstrap 4 Grid</h3>
     <p class="text-secondary p-2">Bootstrap's grid system is built with flexbox and allows up to 12 columns across the page.</p>
     <p class="text-black-50 p-2 pb-2">If you do not want to use all 12 columns individually, you can group the columns together to create wider columns&colon;</p>
@@ -38,6 +41,49 @@
     <p class="text-secondary p-2">
       <strong>Tip&colon;</strong> Each class scales up, so if you wish to set the same width for<code> sm </code>and<code> md</code>, you only need to specify<code> sm</code>.
     </p>
+  </div>
+
+  <div class="container-fluid pt-2 pb-5 border-bottom border-dark">
+    <div class="container bg-light mt-5 p-5">
+      <h3 class="pt-2 pb-3">Basic Structure of Bootstrap 4 Grid</h3>
+      <div class="container d-flex justify-content-center">
+        <img src="img/basic_grid.jpg" alt="Bootstrap 4 Basie Grid" class="img-rounded">
+      </div>
+      <p class="text-secondary pt-3">First example&colon; create a row (<code>&lt;div class="row"&gt;</code>). Then, add the desired number of columns (tags with appropriate<code> .col-*-* </code>classes). The first star (*) represents the responsiveness: sm, md, lg or xl, while the
+        second star represents a number, which should add up to 12 for each row.</p>
+      <p class="text-secondary pt-3">Second example: instead of adding a number to each col, let bootstrap handle the layout, to create equal width columns: two<code> "col" </code>elements = 50% width to each col. three cols = 33.33% width to each col. four cols = 25% width, etc. You
+        can also use<code> .col-sm|md|lg|xl </code>to make the columns responsive.</p>
+      <p class="text-secondary pt-3">Below is a collection of examples using basic Bootstrap 4 grid layouts.</p>
+    </div>
+  </div>
+
+  <div class="container-fluid pt-5 pb-5 border-bottom border-dark">
+    <div class="container">
+      <h3 class="pt-4">Three Equal Columns</h3>
+    </div>
+    <div class="row pt-4">
+      <div class="col text-center text-white p-5 bg-primary">.col</div>
+      <div class="col text-center text-white p-5 bg-dark">.col</div>
+      <div class="col text-center text-white p-5 bg-primary">.col</div>
+    </div>
+
+    <div class="container">
+      <h3 class="pt-4">Responsive Columns</h3>
+    </div>
+    <div class="row pt-4">
+      <div class="col-sm-3 text-center text-white bg-dark p-5">.col-sm-3</div>
+      <div class="col-sm-3 text-center text-white bg-primary p-5">.col-sm-3</div>
+      <div class="col-sm-3 text-center text-white bg-dark p-5">.col-sm-3</div>
+      <div class="col-sm-3 text-center text-white bg-primary p-5">.col-sm-3</div>
+    </div>
+
+    <div class="container">
+      <h3 class="pt-4">Two Unequal Responsive Columns</h3>
+    </div>
+    <div class="row pt-4">
+      <div class="col-sm-4 text-center text-white bg-dark p-5">.col-sm-4</div>
+      <div class="col-sm-8 text-center text-white bg-primary p-5">.col-sm-8</div>
+    </div>
   </div>
 
   <!-- Optional JavaScript -->
