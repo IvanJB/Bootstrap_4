@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1 class="display-3 text-center pt-5">Hello, world!<span class="text-primary text-bold pl-3">This is Bootstrap 4</span></h1>
+  <h4 class="text-secondary text-center mb-5">
+    Bootstrap 4 current version<code> 4.1.2 </code>
+  </h4>
+
+  <div class="container pt-5 pb-5 border-bottom border-dark">
+    <h3 class="display-4 mb-1">Bootstrap 4 Grid</h3>
+    <p class="text-secondary p-2">Bootstrap's grid system is built with flexbox and allows up to 12 columns across the page.</p>
+    <p class="text-black-50 p-2 pb-2">If you do not want to use all 12 columns individually, you can group the columns together to create wider columns&colon;</p>
+
+    <hr>
+
+    <h3 class="pt-2 pb-3">Grid Classes</h3>
+    <p class="text-black-50 pb-2">The Bootstrap 4 grid system has five classes&colon;</p>
+    <ul class="group-list">
+      <li class="group-list-item"><code>.col- </code> (extra small devices - screen width less than
+        <span.text-primary> 576px</span>)</li>
+      <li class="group-list-item"><code>.col-sm- </code> (small devices - screen width equal to or greater than
+        <span.text-primary> 576px</span>)</li>
+      <li class="group-list-item"><code>.col-md- </code> (medium devices - screen width equal or or great than
+        <span.text-primary> 768px</span>)</li>
+      <li class="group-list-item"><code>.col-lg- </code> (large devices - screen width equal to or greater than
+        <span.text-primary> 992px</code>)</li>
+      <li class="group-list-item"><code>.col-xl- </code> (xlarge devices - screen width equal to or greater than
+        <span.text-primary> 1200px</code>)</li>
+    </ul>
+    <p class="text-secondary p-2">The classes abve can be combined to create more dynamic and flexible layouts.</p>
+    <p class="text-secondary p-2">
+      <strong>Tip&colon;</strong> Each class scales up, so if you wish to set the same width for<code> sm </code>and<code> md</code>, you only need to specify<code> sm</code>.
+    </p>
+  </div>
+
+  <div class="container-fluid pt-2 pb-5 border-bottom border-dark">
+    <div class="container bg-light mt-5 p-5">
+      <h3 class="pt-2 pb-3">Basic Structure of Bootstrap 4 Grid</h3>
+      <div class="container d-flex justify-content-center">
+        <img src="img/basic_grid.jpg" alt="Bootstrap 4 Basie Grid" class="img-rounded">
+      </div>
+      <p class="text-secondary pt-3">First example&colon; create a row (<code>&lt;div class="row"&gt;</code>). Then, add the desired number of columns (tags with appropriate<code> .col-*-* </code>classes). The first star (*) represents the responsiveness: sm, md, lg or xl, while the
+        second star represents a number, which should add up to 12 for each row.</p>
+      <p class="text-secondary pt-3">Second example: instead of adding a number to each col, let bootstrap handle the layout, to create equal width columns: two<code> "col" </code>elements = 50% width to each col. three cols = 33.33% width to each col. four cols = 25% width, etc. You
+        can also use<code> .col-sm|md|lg|xl </code>to make the columns responsive.</p>
+      <p class="text-secondary pt-3">Below is a collection of examples using basic Bootstrap 4 grid layouts.</p>
+    </div>
+  </div>
+
+  <div class="container-fluid pt-5 pb-5 border-bottom border-dark">
+    <div class="container">
+      <h3 class="pt-4">Three Equal Columns</h3>
+    </div>
+    <div class="row pt-4">
+      <div class="col text-center text-white p-5 bg-primary">.col</div>
+      <div class="col text-center text-white p-5 bg-dark">.col</div>
+      <div class="col text-center text-white p-5 bg-primary">.col</div>
+    </div>
+
+    <div class="container">
+      <h3 class="pt-4">Responsive Columns</h3>
+    </div>
+    <div class="row pt-4">
+      <div class="col-sm-3 text-center text-white bg-dark p-5">.col-sm-3</div>
+      <div class="col-sm-3 text-center text-white bg-primary p-5">.col-sm-3</div>
+      <div class="col-sm-3 text-center text-white bg-dark p-5">.col-sm-3</div>
+      <div class="col-sm-3 text-center text-white bg-primary p-5">.col-sm-3</div>
+    </div>
+
+    <div class="container">
+      <h3 class="pt-4">Two Unequal Responsive Columns</h3>
+    </div>
+    <div class="row pt-4">
+      <div class="col-sm-4 text-center text-white bg-dark p-5">.col-sm-4</div>
+      <div class="col-sm-8 text-center text-white bg-primary p-5">.col-sm-8</div>
+    </div>
+
+    <div class="container">
+      <h3 class="pt-4">Two Equal Responsive Columns</h3>
+    </div>
+    <div class="row pt-4">
+      <div class="col-sm-6 text-center text-white bg-primary p-5">.col-sm-6</div>
+      <div class="col-sm-6 text-center text-white bg-dark p-5">.col-sm-6</div>
+    </div>
+
+    <div class="container">
+      <h3 class="pt-4">One Full Span</h3>
+    </div>
+    <div class="row pt-4">
+      <div class="col-sm-12 text-center text-white bg-dark p-5">.col-sm-12</div>
+    </div>
+    <div class="container pt-5">
+      <ul class="pagination d-flex justify-content-center">
+        <li class="page-item"><a href="bs4_typography.html" class="page-link" target="_blank">1</a></li>
+        <li class="page-item"><a href="typography.html" class="page-link">2</a></li>
+        <li class="page-item"><a href="typography.html" class="page-link">3</a></li>
+        <li class="page-item"><a href="typography.html" class="page-link">4</a></li>
+        <li class="page-item"><a href="typography.html" class="page-link">5</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</body>
+
+</html>
