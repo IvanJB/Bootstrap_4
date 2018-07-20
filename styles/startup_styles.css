@@ -56,6 +56,10 @@ img {
   margin: 1rem 0 0;
 }
 
+
+/* Hero and cta */
+
+
 #stage {
   background: url('../img/stage.jpg') center center no-repeat;
   background-size: cover;
@@ -77,4 +81,11 @@ img {
   color: var(--white);
   font-weight: bold;
   text-transform: uppercase;
+}
+
+/* Features */
+
+.feature-content {
+  padding: 8rem 0;
+  overflow: hidden;
 }
