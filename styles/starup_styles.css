@@ -1,0 +1,10 @@
+/* CSS for Startup Landing Page */
+
+html,body {
+  height: 100vh;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
