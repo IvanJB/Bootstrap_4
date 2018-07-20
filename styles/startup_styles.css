@@ -1,0 +1,80 @@
+/* CSS for Startup Landing Page */
+
+/* CSS Variables */
+:root {
+
+  /* Text colors */
+  --black : #333;
+  --white : #fff;
+  --grey : #ababab;
+  --light-grey : #d1d1d1;
+  --dark-grey : #848484;
+
+  /* Global color for body */
+  --global : #6c6f73;
+
+}
+
+/* General Styling */
+
+*,html {
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100vh;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,h2,h3,h4,h5 {
+  color: var(--black);
+}
+
+h6 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+
+img {
+  max-width: 100%
+}
+
+.blockquote {
+  font-size: 1.6rem; /*(25.6px / 16px(1rem)) */
+  color: var(--black);
+  border: none;
+  padding: 0;
+}
+
+.blockquote-footer {
+  margin: 1rem 0 0;
+}
+
+#stage {
+  background: url('../img/stage.jpg') center center no-repeat;
+  background-size: cover;
+  color: var(--white);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#stage-caption {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#stage-caption h1 {
+  color: var(--white);
+  font-weight: bold;
+  text-transform: uppercase;
+}
