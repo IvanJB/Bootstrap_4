@@ -39,6 +39,11 @@ h6 {
   font-weight: bold;
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
+  color: var(--grey);
+}
+
+p {
+  color: var(--global);
 }
 
 img {
@@ -101,6 +106,18 @@ img {
 
 .feature-dark h2 {
   color: var(--white);
+}
+
+.feature-alt {
+  background: #f0f0f0;
+}
+
+#feature-four .feature-content {
+  padding: 0;
+}
+
+#feature-five img {
+  margin-top: 2rem;
 }
 
 /* Media Query */
