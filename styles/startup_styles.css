@@ -89,3 +89,26 @@ img {
   padding: 8rem 0;
   overflow: hidden;
 }
+
+.feature-content img {
+  margin-bottom: -8rem;
+}
+
+.feature-dark {
+  background: #262F36;
+  color: var(--white);
+}
+
+.feature-dark h2 {
+  color: var(--white);
+}
+
+/* Media Query */
+
+@media screen and ( min-width: 991px ){
+
+    .feature-content {
+      display: flex;
+      align-items: center;
+    }
+}
