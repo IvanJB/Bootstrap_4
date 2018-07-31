@@ -44,6 +44,7 @@ h6 {
 
 p {
   color: var(--global);
+  font-weight: 100;
 }
 
 img {
@@ -66,8 +67,9 @@ img {
 
 
 #stage {
-  background: url('../img/stage.jpg') center center no-repeat;
+  background: url('../img/stage.jpg') center center no-repeat #333;
   background-size: cover;
+  background-blend-mode: overlay;
   color: var(--white);
   height: 100%;
   width: 100%;
@@ -86,6 +88,10 @@ img {
   color: var(--white);
   font-weight: bold;
   text-transform: uppercase;
+}
+
+#stage-caption p {
+  color: var(--white);
 }
 
 /* Features */
@@ -119,6 +125,23 @@ img {
 #feature-five img {
   margin-top: 2rem;
 }
+
+#main-footer {
+  background: #262F36;
+  padding: 6rem 0;
+  color: var(--white);
+  font-size: 0.8rem;
+}
+
+#main-footer h6 {
+  color: #718FA9;
+}
+
+#main-footer a {
+  color: #6C6F73;
+}
+
+
 
 /* Media Query */
 
