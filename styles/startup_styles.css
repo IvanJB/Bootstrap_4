@@ -139,6 +139,12 @@ img {
 
 #main-footer a {
   color: #6C6F73;
+  text-decoration: none;
+}
+
+#main-footer a:hover {
+  color: var(--white);
+  transition: 2s;
 }
 
 
@@ -150,5 +156,12 @@ img {
     .feature-content {
       display: flex;
       align-items: center;
+    }
+}
+
+@media screen and ( max-width: 991px ){
+
+    #feature-four .feature-content {
+      padding: 8rem 0;
     }
 }
